@@ -1,5 +1,10 @@
 # pardos: Quality of Life extensions for pandas
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pardos)
+![PyPI - Version](https://img.shields.io/pypi/v/pardos)
+![GitHub](https://img.shields.io/github/license/josejg/pardos)
+![GitHub last commit](https://img.shields.io/github/last-commit/josejg/pardos)
+
 `pardos` is a Python package that extends the functionality of pandas, providing additional methods for enhanced data manipulation and analysis. It aims to simplify common data operations and introduce new features to make working with pandas DataFrames and Series more efficient and intuitive.
 
 Methods are provided as custom accessors or directly added as methods for DataFrames and Series, allowing you to perform operations directly on your data without the need for additional functions or libraries. 
@@ -17,7 +22,11 @@ Methods are provided as custom accessors or directly added as methods for DataFr
 You can install `pardos` using pip:
 
 ```bash
+# Stable version
 pip install pardos
+# Or the latest version from GitHub
+pip install git+https://github.com/josejg/pardos.git
+
 ```
 
 ## Usage
