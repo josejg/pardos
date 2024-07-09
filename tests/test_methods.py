@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import pardos
 import pytest
@@ -129,6 +128,7 @@ def test_set_collection(sample_df):
 
 def test_fillNA(sample_df):
     from pardos.methods import NA_VALUE
+
     sample_df["I"] = [1, None, 3, NA_VALUE, 5]
     result = sample_df["I"].fillNA(0)
     assert result.tolist() == [1, None, 3, 0, 5]
@@ -141,6 +141,7 @@ def test_fillNA(sample_df):
 
 def test_isNA(sample_df):
     from pardos.methods import NA_VALUE
+
     sample_df["J"] = [1, None, 3, NA_VALUE, 5]
     result = sample_df["J"].isNA()
     assert result.tolist() == [False, False, False, True, False]
@@ -148,6 +149,7 @@ def test_isNA(sample_df):
 
 def test_notNA(sample_df):
     from pardos.methods import NA_VALUE
+
     sample_df["K"] = [1, None, 3, NA_VALUE, 5]
     result = sample_df["K"].notNA()
     assert result.tolist() == [True, True, True, False, True]
